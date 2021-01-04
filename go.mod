@@ -1,4 +1,4 @@
-module simple-tracking
+module github.com/chanshi/simple-tracking
 
 go 1.15
 

@@ -3,10 +3,11 @@
 简单的数据跟踪统计服务
 
 #### 安装
+
 ```shell script
-go mod tidy
-go mod download 
+go get -t github.com/chanshi/simple-tracking 
 ```
+
 
 ### 使用方式
 ```go

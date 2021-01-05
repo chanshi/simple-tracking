@@ -1,6 +1,6 @@
 package model
 
-import "simple-tracking/support/db"
+import "github.com/chanshi/simple-tracking/support/db"
 
 type MetaDevice struct {
 	//移动设备信息

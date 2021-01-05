@@ -1,8 +1,8 @@
 package model
 
 import (
-	"simple-tracking/support"
-	"simple-tracking/support/db"
+	"github.com/chanshi/simple-tracking/support"
+	"github.com/chanshi/simple-tracking/support/db"
 	"time"
 )
 

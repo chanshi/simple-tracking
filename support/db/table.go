@@ -1,7 +1,7 @@
 package db
 
 import (
-	"simple-tracking/support"
+	"github.com/chanshi/simple-tracking/support"
 	"sync"
 	"time"
 )

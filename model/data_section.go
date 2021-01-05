@@ -1,7 +1,7 @@
 package model
 
 import (
-	"simple-tracking/support/db"
+	"github.com/chanshi/simple-tracking/support/db"
 	"strconv"
 )
 

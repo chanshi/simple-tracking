@@ -2,7 +2,7 @@ package model
 
 import (
 	"fmt"
-	"simple-tracking/support"
+	"github.com/chanshi/simple-tracking/support"
 )
 
 /**

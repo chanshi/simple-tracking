@@ -1,9 +1,9 @@
 package tracking
 
 import (
-	"simple-tracking/model"
-	"simple-tracking/support"
-	"simple-tracking/support/db"
+	"github.com/chanshi/simple-tracking/model"
+	"github.com/chanshi/simple-tracking/support"
+	"github.com/chanshi/simple-tracking/support/db"
 	"sync"
 )
 

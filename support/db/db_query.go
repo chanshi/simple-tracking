@@ -2,7 +2,7 @@ package db
 
 import (
 	"errors"
-	"simple-tracking/support"
+	"github.com/chanshi/simple-tracking/support"
 	"strings"
 )
 

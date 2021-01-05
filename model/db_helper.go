@@ -26,7 +26,7 @@ CREATE TABLE `visitor` (
   `lastVisitTime` datetime DEFAULT NULL,
   PRIMARY KEY (`visitorId`),
   KEY `timel` (`visitorId`,`firstVisitTime`,`lastVisitTime`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 */
 
@@ -99,7 +99,7 @@ CREATE TABLE `visit` (
   PRIMARY KEY (`visitId`),
   KEY `visitTime` (`visitorId`),
   KEY `visitorId` (`visitorId`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
  */
 
 func NewVisitTable() *db.Table  {

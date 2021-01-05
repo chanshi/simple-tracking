@@ -60,6 +60,7 @@ func (this *Tracking) Config( config *Config ) *Tracking {
 		base.EnableTracking = config.EnableTracking
 		base.DSN = config.Dsn
 		base.MaxOpen = config.MaxOpen
+		base.GeoCity = config.GeoCity
 		support.SetConfig(base)
 	}
 	return this

@@ -31,7 +31,7 @@ type geoLite struct {
 func (this *geoLite) Init()   {
 	db,err := geoip2.Open(Config().GeoCity)
 	if err!= nil{
-		Log("GetGeoIp Open error",err.Error())
+		Log("GetGeoIp Open error",err.Error(),Config().GeoCity)
 		return
 	}
 	this.dbCity = db

@@ -1,7 +1,6 @@
 package db
 
 import (
-	"github.com/chanshi/simple-tracking/support"
 	"strings"
 )
 
@@ -22,7 +21,7 @@ func UpdateData( table string , saveData ,whereDate DataMap ) (int64,error) {
 	}
 
 	buildSql :="UPDATE "+ table +" SET "+strings.Join(fieldK,",")+" WHERE "+strings.Join(whereK,",")+ ";"
-	support.Log("UPDATE SQL==> ",buildSql)
+	//support.Log("UPDATE SQL==> ",buildSql)
 
 	for i:=0;i<len(mergeK);i++ {
 		key:=mergeK[i]

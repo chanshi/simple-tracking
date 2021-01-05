@@ -43,6 +43,10 @@ func (this *Tracker) Begin() *Tracker  {
 	return this
 }
 
+func (this *Tracker) CustomData( data ...interface{} ) *Tracker {
+	this.visitor.Data.Data(data...)
+	return this
+}
 
 func (this *Tracker) App( appName ,appVersion  string) *Tracker  {
 	this.visitor.Meta.Data(

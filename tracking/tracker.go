@@ -40,6 +40,7 @@ func (this *Tracker) Begin() *Tracker  {
 		return this
 	}
 	this.proxy = model.NewVisit(this.visitor)
+	support.Log("Visitor Visit Begin ==>",this.visitor.VisitorId)
 	return this
 }
 

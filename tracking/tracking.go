@@ -70,7 +70,8 @@ func (this *Tracking) Visitor( visitorId int64 ) *Tracker {
 	this.RLock()
 	visitor,ok:=this.item[model.Vid(visitorId)]
 	this.RUnlock()
-	if ok{
+	if ok && visitor.visitor!=nil{
+
 		return visitor
 	}else{
 		this.Lock()

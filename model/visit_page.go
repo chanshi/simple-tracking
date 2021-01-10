@@ -64,8 +64,9 @@ func (this *VisitPage) Action( group,name string , data ...interface{} ) *VisitA
 
 
 func (this *VisitPage) Save()  {
-	_,err:=this.db.Insert(GetVisitPageData(this))
+	id,err:=this.db.Insert(GetVisitPageData(this))
 	if err!= nil{
 		support.Log(err.Error())
 	}
+	this.VisitPageId = id
 }
